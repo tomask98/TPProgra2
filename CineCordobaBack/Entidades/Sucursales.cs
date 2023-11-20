@@ -18,6 +18,10 @@ namespace CineCordobaBack.Entidades
             Id_sucursal = id_sucursal;
             Nombre_Sucursal = nombresucursal;
         }
+        public Sucursales()
+        {
+            
+        }
 
 
 

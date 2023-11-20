@@ -14,7 +14,7 @@ namespace CineCordobaBack.Entidades
         public Salas()
         {
             SalaId = 0;
-            TipoSala = null;
+            TipoSala = new TipoSalas();
         }
     }
 }

@@ -28,11 +28,11 @@ namespace CineCordobaBack.Entidades
         public Funciones()
         {
             FuncionId = 0;
-            HorarioID = null;
+            HorarioID = new Horarios();
             Fecha = DateTime.Now;
             Subtitulo = false;
-            PeliculaId = null;
-            SalasId= null;
+            PeliculaId = new Peliculas();
+            SalasId= new Salas();
         }
     }
 }

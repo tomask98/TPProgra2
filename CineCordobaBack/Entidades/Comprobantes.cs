@@ -10,13 +10,20 @@ namespace CineCordobaBack.Entidades
     {
         public int ComprobanteId { get; set; }
         public DateTime FechaComprobante { get; set; }
-        public Clientes ClienteId { get; set; }
-        public Sucursales SucursalId { get; set; }
+        public Clientes Cliente { get; set; }
+        public Sucursales Sucursal { get; set; }
         public FormasPago FormaPagoId { get; set; }
-        public Vendedores VendedorId { get; set; }
+        public Vendedores Vendedor { get; set; }
+        public DetalleComprobante Detalle { get; set; }
 
         public Comprobantes()
-        { 
+        {
+            Detalle = new DetalleComprobante();
+            Sucursal = new Sucursales();
+            Vendedor = new Vendedores();
+            Cliente = new Clientes();
+
         }
+
     }
 }

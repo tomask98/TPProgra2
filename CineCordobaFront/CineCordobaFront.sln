@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineCordobaFront", "CineCordobaFront.csproj", "{AD5BA7CD-07AD-4FB2-A698-901F9CFB9D6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineCordobaFront", "CineCordobaFront.csproj", "{AD5BA7CD-07AD-4FB2-A698-901F9CFB9D6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineCordobaBack", "..\CineCordobaBack\CineCordobaBack.csproj", "{36946705-6FC7-495E-852E-359E2139E661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineCordobaBack", "..\CineCordobaBack\CineCordobaBack.csproj", "{36946705-6FC7-495E-852E-359E2139E661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineCordobaApi", "..\CineCordobaApi\CineCordobaApi.csproj", "{0EBE06B9-2E09-430C-8706-FB0BADD5E807}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineCordobaApi", "..\CineCordobaApi\CineCordobaApi.csproj", "{0EBE06B9-2E09-430C-8706-FB0BADD5E807}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

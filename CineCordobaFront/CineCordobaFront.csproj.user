@@ -13,5 +13,8 @@
     <Compile Update="Presentacion\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Reporte\FrmConsultaGeneroTipoSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

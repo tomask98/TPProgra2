@@ -15,11 +15,13 @@ namespace CineCordobaBack.Fachada.Implementacion
         private IFuncionDao funcionDao;
         private IClienteDao clienteDao;
         private IInicioDao inicioDao;
+        private IReporteDao ReporteDao;
         public Aplicacion()
         {
             funcionDao = new FuncionDao();
             clienteDao = new ClienteDao();
             inicioDao = new InicioDao();
+            ReporteDao= new ReporteDao();
         }
 
         public bool CrearFuncion(Funciones oFuncion) //no ta
@@ -81,6 +83,11 @@ namespace CineCordobaBack.Fachada.Implementacion
         public int ObtenerUsuario(Usuarios oUsuario)//ta
         {
             return inicioDao.ObtenerUsuario(oUsuario);
+        }
+
+        public List<Comprobantes>? TraerComprobantes(DateTime fechaDesde, string ts1, string ts2, string ts3, string ts4, string ts5, string ts6, string g1, string g2, string g3, string g4, string g5, string g6)
+        {
+            return ReporteDao.ObtenerConsultaUnoFiltrada(fechaDesde, ts1, ts2, ts3, ts4, ts5, ts6, g1, g2, g3, g4, g5, g6);
         }
     }
 }

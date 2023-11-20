@@ -12,12 +12,19 @@ namespace CineCordobaBack.Entidades
         public string Tipo { get; set; }
         public decimal Precio { get; set; }
 
-        public TipoSalas(int id_sala,string tipo)
+        public TipoSalas(int id_sala, string tipo)
         {
             Id_sala = id_sala;
-            Tipo=tipo;
+            Tipo = tipo;
         }
-       
+        public TipoSalas()
+        {
+            Id_sala = 0;
+            Tipo = string.Empty;
+            Precio = 0;
+
+        }
+
 
     }
 }

@@ -1,6 +1,7 @@
 using CineCordobaBack.Entidades;
 using CineCordobaFront.Cliente;
 using CineCordobaFront.Presentacion;
+using CordobaCineApp.Presentacion;
 using Newtonsoft.Json;
 using System.Reflection.Metadata;
 
@@ -149,6 +150,12 @@ namespace CineCordobaFront
         {
             frmCreditos creditos = new frmCreditos();
             creditos.ShowDialog();
+        }
+
+        private void reporteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmConsultaGeneroTipoSala repor = new FrmConsultaGeneroTipoSala();
+            repor.ShowDialog();
         }
     }
 }

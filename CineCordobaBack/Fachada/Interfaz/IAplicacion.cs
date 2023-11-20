@@ -26,9 +26,6 @@ namespace CineCordobaBack.Fachada.Interfaz
         int ObtenerProximoCliente();
 
         int ObtenerUsuario(Usuarios oUsuario);
-
-
-
-
+        List<Comprobantes>? TraerComprobantes(DateTime fechaDesde, string ts1, string ts2, string ts3, string ts4, string ts5, string ts6, string g1, string g2, string g3, string g4, string g5, string g6);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CineCordobaBack.Datos.Interfaz;
 using CineCordobaBack.Entidades;
+using CordobaCineBack.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -74,7 +75,9 @@ namespace CineCordobaBack.Datos.Implementacion
 
                 int numero = int.Parse(fila["id_pelicula"].ToString());
                 string nombre = fila["nombre_pelicula"].ToString();
-                Peliculas p = new Peliculas(numero, nombre);
+                Generos genero = new Generos();
+                genero.Id_genero = int.Parse(fila["id_genero"].ToString());
+                Peliculas p = new Peliculas(numero, nombre,genero);
                 lpeliculas.Add(p);            
             }
             return lpeliculas;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CordobaCineBack.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -13,13 +14,26 @@ namespace CineCordobaBack.Entidades
         
         public int Id_pelicula { get; set; }
         public string Nombre_pelicula { get; set; }
+        public Generos Genero { get; set; }
 
-        
+
         public Peliculas()
         {
             Id_pelicula = 0;
             Nombre_pelicula = string.Empty;
+           
+            Genero = new Generos();
+            
         }
+
+        public Peliculas(int peliculaid, string nombrepelicula, Generos genero)
+        {
+            Id_pelicula = peliculaid;
+            Nombre_pelicula = nombrepelicula;
+            Genero = genero;
+          
+        }
+       
         public Peliculas(int peliculaid, string nombrepelicula)
         {
             Id_pelicula = peliculaid;
