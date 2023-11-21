@@ -366,7 +366,7 @@
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(789, 87);
+            btnConsultar.Location = new Point(856, 100);
             btnConsultar.Margin = new Padding(5, 3, 5, 3);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(142, 30);
@@ -377,7 +377,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(789, 209);
+            btnCancelar.Location = new Point(856, 223);
             btnCancelar.Margin = new Padding(5, 3, 5, 3);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(142, 29);

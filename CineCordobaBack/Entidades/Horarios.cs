@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,14 +10,14 @@ namespace CineCordobaBack.Entidades
     public class Horarios
     {
         public int Id_horario { get; set; }
-        public DateTime Inicio { get; set; }
-        public DateTime Final { get; set; }
+        public TimeSpan Inicio { get; set; }
+        public TimeSpan Final { get; set; }
 
 
         
 
         
-        public Horarios(int id_horario, DateTime inicio,DateTime final)
+        public Horarios(int id_horario, TimeSpan inicio, TimeSpan final)
         {
             Id_horario = id_horario;
             Inicio = inicio;
@@ -30,9 +31,21 @@ namespace CineCordobaBack.Entidades
 
         public string HorarioCompleto
         {
-            get { return $"{Inicio.ToString("hh:mm tt")} - {Final.ToString("hh:mm tt")}"; }
+            get { return $"{Inicio} - {Final}"; }
         }
-
+        //public static TimeSpan ConvertirStringATimeSpan(string cadena)
+        //{
+        //    TimeSpan resultado;
+        //    if (TimeSpan.TryParseExact(cadena, "hh\\:mm", CultureInfo.InvariantCulture, out resultado))
+        //    {
+        //        return resultado;
+        //    }
+        //    else
+        //    {
+        //        // Manejar el caso en que la cadena no tenga el formato correcto
+        //        throw new FormatException("La cadena no tiene el formato correcto para TimeSpan.");
+        //    }
+        //}
 
         public override string ToString()
         {

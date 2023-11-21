@@ -56,8 +56,8 @@ namespace CineCordobaBack.Datos.Implementacion
             foreach (DataRow fila in tabla.Rows)
             {                
                     int id_horario = int.Parse(fila["id_horario"].ToString());
-                    DateTime inicio = Convert.ToDateTime(fila["inicio"].ToString());
-                    DateTime final= Convert.ToDateTime(fila["final"].ToString());
+                TimeSpan inicio = TimeSpan.Parse(fila["inicio"].ToString());
+                TimeSpan final = TimeSpan.Parse(fila["final"].ToString());
                 
                 Horarios h = new Horarios(id_horario,inicio,final);                             
 
